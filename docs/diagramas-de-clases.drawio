@@ -1,0 +1,444 @@
+<mxfile host="app.diagrams.net" agent="Claude Code" pages="6">
+  <diagram id="pagina1" name="basico.sinsol">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="basico_sinsol_1" value="&lt;b&gt;Calc&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="174" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_sinsol_2" value="+ l: List&amp;lt;Double&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="basico_sinsol_1">
+          <mxGeometry x="0" y="28" width="174" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_sinsol_3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="basico_sinsol_1">
+          <mxGeometry x="0" y="54" width="174" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_sinsol_4" value="+ a(n: double): void&lt;br&gt;+ prom(): double&lt;br&gt;+ res(): String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="basico_sinsol_1">
+          <mxGeometry x="0" y="62" width="174" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_sinsol_5" value="&lt;b&gt;Malos olores&lt;/b&gt;&lt;br&gt;- Nombres de una letra (l, a, n)&lt;br&gt;- Atributo público: se salta la validación&lt;br&gt;- Números mágicos 0, 5, 3, 4.5&lt;br&gt;- Promedio duplicado en prom() y res()&lt;br&gt;- Strings mágicos como resultado&lt;br&gt;- Nota inválida se ignora en silencio" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="330" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_sinsol_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=none;dashed=1;" edge="1" parent="1" source="basico_sinsol_5" target="basico_sinsol_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_sinsol_7" value="&lt;b&gt;Paquete&lt;/b&gt;&lt;br&gt;com.udc.reut.cod.app.codigolimpioapp.basico.sinsol" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="520" height="54" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pagina2" name="basico.consol">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="basico_consol_1" value="&lt;b&gt;RegistroDeNotas&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="296" height="232" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_2" value="&lt;u&gt;+ NOTA_MINIMA: double = 0.0&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ NOTA_MAXIMA: double = 5.0&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ NOTA_APROBATORIA: double = 3.0&lt;/u&gt;&lt;br&gt;&lt;u&gt;+ NOTA_EXCELENCIA: double = 4.5&lt;/u&gt;&lt;br&gt;- notas: List&amp;lt;Double&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="basico_consol_1">
+          <mxGeometry x="0" y="28" width="296" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="basico_consol_1">
+          <mxGeometry x="0" y="126" width="296" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_4" value="+ agregarNota(nota: double): void&lt;br&gt;+ calcularPromedio(): double&lt;br&gt;+ obtenerDesempeno(): Desempeno&lt;br&gt;+ getNotas(): List&amp;lt;Double&amp;gt;&lt;br&gt;- esNotaValida(nota: double): boolean" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="basico_consol_1">
+          <mxGeometry x="0" y="134" width="296" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_5" value="«enumeration»&lt;br&gt;&lt;b&gt;Desempeno&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="94" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_6" value="EXCELENTE&lt;br&gt;APROBADO&lt;br&gt;REPROBADO" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="basico_consol_5">
+          <mxGeometry x="0" y="42" width="94" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="basico_consol_5">
+          <mxGeometry x="0" y="104" width="94" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_8" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="basico_consol_5">
+          <mxGeometry x="0" y="112" width="94" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_9" value="retorna" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;" edge="1" parent="1" source="basico_consol_1" target="basico_consol_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_10" value="&lt;b&gt;Principios aplicados&lt;/b&gt;&lt;br&gt;Encapsulamiento: lista privada + vista de solo lectura&lt;br&gt;Nombres que revelan la intención&lt;br&gt;Constantes en vez de números mágicos&lt;br&gt;Enum en vez de Strings mágicos&lt;br&gt;DRY: obtenerDesempeno() reutiliza calcularPromedio()&lt;br&gt;Fallar rápido: IllegalArgumentException" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="420" width="460" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="basico_consol_11" value="&lt;b&gt;Paquete&lt;/b&gt;&lt;br&gt;com.udc.reut.cod.app.codigolimpioapp.basico.consol" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="520" height="54" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pagina3" name="intermedio.sinsol">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="intermedio_sinsol_1" value="&lt;b&gt;Pedido&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="555" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_sinsol_2" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_sinsol_1">
+          <mxGeometry x="0" y="28" width="555" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_sinsol_3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="intermedio_sinsol_1">
+          <mxGeometry x="0" y="54" width="555" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_sinsol_4" value="+ calc(items: List&amp;lt;String[]&amp;gt;, tc: int, exp: boolean, cup: String): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_sinsol_1">
+          <mxGeometry x="0" y="62" width="555" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_sinsol_5" value="&lt;b&gt;Malos olores&lt;/b&gt;&lt;br&gt;- Método de ~50 líneas con 4 niveles de if&lt;br&gt;- String[] para ítems (obsesión por primitivos)&lt;br&gt;- int mágico para el tipo de cliente&lt;br&gt;- boolean bandera (exp)&lt;br&gt;- Retorna -1 como código de error&lt;br&gt;- Imprime en consola (efecto secundario)" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="260" width="380" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_sinsol_6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=none;dashed=1;" edge="1" parent="1" source="intermedio_sinsol_5" target="intermedio_sinsol_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_sinsol_7" value="&lt;b&gt;Paquete&lt;/b&gt;&lt;br&gt;com.udc.reut.cod.app.codigolimpioapp.intermedio.sinsol" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="520" height="54" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pagina4" name="intermedio.consol">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="intermedio_consol_1" value="&lt;b&gt;CalculadoraPedido&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="519" height="268" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_2" value="&lt;u&gt;~ CUPON_DESCUENTO: String = &quot;DESC10&quot;&lt;/u&gt;&lt;br&gt;&lt;u&gt;~ PORCENTAJE_CUPON: double = 0.10&lt;/u&gt;&lt;br&gt;&lt;u&gt;~ MINIMO_PARA_CUPON: double = 100000&lt;/u&gt;&lt;br&gt;&lt;u&gt;~ TASA_IVA: double = 0.19&lt;/u&gt;&lt;br&gt;&lt;u&gt;~ COSTO_ENVIO_ESTANDAR: double = 10000&lt;/u&gt;&lt;br&gt;&lt;u&gt;~ MINIMO_ENVIO_GRATIS: double = 200000&lt;/u&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_1">
+          <mxGeometry x="0" y="28" width="519" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="intermedio_consol_1">
+          <mxGeometry x="0" y="144" width="519" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_4" value="+ calcular(pedido: Pedido): ResumenPedido&lt;br&gt;- calcularSubtotal(pedido: Pedido): double&lt;br&gt;- calcularDescuentoCliente(pedido: Pedido, subtotal: double): double&lt;br&gt;- calcularDescuentoCupon(pedido: Pedido, subtotal: double): double&lt;br&gt;- calcularIva(base: double): double&lt;br&gt;- calcularEnvio(pedido: Pedido, base: double): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_1">
+          <mxGeometry x="0" y="152" width="519" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_5" value="«record»&lt;br&gt;&lt;b&gt;Pedido&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="640" y="80" width="224" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_6" value="+ items: List&amp;lt;ItemPedido&amp;gt;&lt;br&gt;+ tipoCliente: TipoCliente&lt;br&gt;+ tipoEnvio: TipoEnvio&lt;br&gt;+ codigoCupon: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_5">
+          <mxGeometry x="0" y="42" width="224" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="intermedio_consol_5">
+          <mxGeometry x="0" y="122" width="224" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_8" value="+ cupon(): Optional&amp;lt;String&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_5">
+          <mxGeometry x="0" y="130" width="224" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_9" value="«record»&lt;br&gt;&lt;b&gt;ItemPedido&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1000" y="80" width="202" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_10" value="+ nombre: String&lt;br&gt;+ precioUnitario: double&lt;br&gt;+ cantidad: int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_9">
+          <mxGeometry x="0" y="42" width="202" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="intermedio_consol_9">
+          <mxGeometry x="0" y="104" width="202" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_12" value="+ subtotal(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_9">
+          <mxGeometry x="0" y="112" width="202" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_13" value="«enumeration»&lt;br&gt;&lt;b&gt;TipoCliente&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="640" y="400" width="253" height="156" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_14" value="NORMAL (0%)&lt;br&gt;FRECUENTE (5%)&lt;br&gt;VIP (10%)&lt;br&gt;- porcentajeDescuento: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_13">
+          <mxGeometry x="0" y="42" width="253" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="intermedio_consol_13">
+          <mxGeometry x="0" y="122" width="253" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_16" value="+ porcentajeDescuento(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_13">
+          <mxGeometry x="0" y="130" width="253" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_17" value="«enumeration»&lt;br&gt;&lt;b&gt;TipoEnvio&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="920" y="400" width="166" height="138" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_18" value="ESTANDAR (0)&lt;br&gt;EXPRESS (15000)&lt;br&gt;- recargo: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_17">
+          <mxGeometry x="0" y="42" width="166" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_19" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="intermedio_consol_17">
+          <mxGeometry x="0" y="104" width="166" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_20" value="+ recargo(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_17">
+          <mxGeometry x="0" y="112" width="166" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_21" value="«record»&lt;br&gt;&lt;b&gt;ResumenPedido&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="40" y="480" width="166" height="174" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_22" value="+ subtotal: double&lt;br&gt;+ descuento: double&lt;br&gt;+ iva: double&lt;br&gt;+ envio: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_21">
+          <mxGeometry x="0" y="42" width="166" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_23" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="intermedio_consol_21">
+          <mxGeometry x="0" y="122" width="166" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_24" value="+ base(): double&lt;br&gt;+ total(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="intermedio_consol_21">
+          <mxGeometry x="0" y="130" width="166" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_25" value="recibe" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;" edge="1" parent="1" source="intermedio_consol_1" target="intermedio_consol_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_26" value="crea" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;" edge="1" parent="1" source="intermedio_consol_1" target="intermedio_consol_21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_27" value="1..*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;startArrow=diamondThin;startFill=1;startSize=14;endArrow=open;endFill=0;" edge="1" parent="1" source="intermedio_consol_5" target="intermedio_consol_9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_28" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;" edge="1" parent="1" source="intermedio_consol_5" target="intermedio_consol_13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_29" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;" edge="1" parent="1" source="intermedio_consol_5" target="intermedio_consol_17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_30" value="&lt;b&gt;Principios aplicados&lt;/b&gt;&lt;br&gt;Funciones pequeñas: una regla de negocio por método&lt;br&gt;Objeto parámetro: Pedido&lt;br&gt;Value objects: ItemPedido en vez de String[]&lt;br&gt;Enums en vez de int mágico y boolean bandera&lt;br&gt;Excepciones en constructores en vez de return -1&lt;br&gt;Sin efectos secundarios: devuelve ResumenPedido" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="640" y="640" width="420" height="139" as="geometry" />
+        </mxCell>
+        <mxCell id="intermedio_consol_31" value="&lt;b&gt;Paquete&lt;/b&gt;&lt;br&gt;com.udc.reut.cod.app.codigolimpioapp.intermedio.consol" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="520" height="54" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pagina5" name="avanzado.sinsol">
+    <mxGraphModel dx="1400" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="avanzado_sinsol_1" value="&lt;b&gt;GestorNomina&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="80" width="490" height="142" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_2" value="&lt;u&gt;+ BD: List&amp;lt;String&amp;gt;&lt;/u&gt;&lt;br&gt;- empleados: List&amp;lt;Empleado&amp;gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="avanzado_sinsol_1">
+          <mxGeometry x="0" y="28" width="490" height="44" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="avanzado_sinsol_1">
+          <mxGeometry x="0" y="72" width="490" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_4" value="+ agregarEmpleado(nombre: String, tipo: String, salario: double,&lt;br&gt;      horas: int, valorHora: double, correo: String): void&lt;br&gt;+ procesarNomina(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="avanzado_sinsol_1">
+          <mxGeometry x="0" y="80" width="490" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_5" value="&lt;b&gt;Empleado&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="40" y="360" width="166" height="178" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_6" value="+ nombre: String&lt;br&gt;+ tipo: String&lt;br&gt;+ salario: double&lt;br&gt;+ horas: int&lt;br&gt;+ valorHora: double&lt;br&gt;+ correo: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="avanzado_sinsol_5">
+          <mxGeometry x="0" y="28" width="166" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="avanzado_sinsol_5">
+          <mxGeometry x="0" y="144" width="166" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_8" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="avanzado_sinsol_5">
+          <mxGeometry x="0" y="152" width="166" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_9" value="«detalle concreto»&lt;br&gt;&lt;b&gt;System.out&lt;/b&gt;" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="217" height="102" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_10" value="" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="avanzado_sinsol_9">
+          <mxGeometry x="0" y="42" width="217" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="avanzado_sinsol_9">
+          <mxGeometry x="0" y="68" width="217" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_12" value="+ println(x: String): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" vertex="1" parent="avanzado_sinsol_9">
+          <mxGeometry x="0" y="76" width="217" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_13" value="*" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;startArrow=diamondThin;startFill=0;startSize=14;endArrow=open;endFill=0;" edge="1" parent="1" source="avanzado_sinsol_1" target="avanzado_sinsol_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_14" value="imprime correos y errores" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;" edge="1" parent="1" source="avanzado_sinsol_1" target="avanzado_sinsol_9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_15" value="&lt;b&gt;Viola SOLID&lt;/b&gt;&lt;br&gt;SRP: valida, calcula, guarda, notifica y reporta&lt;br&gt;OCP: switch (tipo) por cada tipo de empleado&lt;br&gt;DIP: depende de una lista estática y de System.out&lt;br&gt;Estado global: BD contamina las pruebas" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="600" y="80" width="400" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_16" value="&lt;b&gt;Problema de modelado&lt;/b&gt;&lt;br&gt;Clase comodín: valorHora solo sirve a CONTRATISTA,&lt;br&gt;horas significa cosas distintas según el tipo,&lt;br&gt;tipo es un String libre." style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="560" width="380" height="88" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=none;dashed=1;" edge="1" parent="1" source="avanzado_sinsol_15" target="avanzado_sinsol_1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=none;dashed=1;" edge="1" parent="1" source="avanzado_sinsol_16" target="avanzado_sinsol_5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_sinsol_19" value="&lt;b&gt;Paquete&lt;/b&gt;&lt;br&gt;com.udc.reut.cod.app.codigolimpioapp.avanzado.sinsol" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="520" height="54" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pagina6" name="avanzado.consol">
+    <mxGraphModel dx="1919" dy="1002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="avanzado_consol_1" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;ServicioNomina&lt;/b&gt;" vertex="1">
+          <mxGeometry height="142" width="555" x="460" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_2" parent="avanzado_consol_1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="- repositorio: RepositorioPagos&lt;br&gt;- notificador: Notificador" vertex="1">
+          <mxGeometry height="44" width="555" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_3" parent="avanzado_consol_1" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="555" y="72" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_4" parent="avanzado_consol_1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ ServicioNomina(repositorio: RepositorioPagos, notificador: Notificador)&lt;br&gt;+ procesar(empleados: List&amp;lt;Empleado&amp;gt;): double&lt;br&gt;- pagar(empleado: Empleado): double" vertex="1">
+          <mxGeometry height="62" width="555" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_5" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="«interface»&lt;br&gt;&lt;b&gt;Empleado&lt;/b&gt;" vertex="1">
+          <mxGeometry height="138" width="231" x="240" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_6" parent="avanzado_consol_5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="26" width="231" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_7" parent="avanzado_consol_5" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="231" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_8" parent="avanzado_consol_5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ nombre(): String&lt;br&gt;+ correo(): String&lt;br&gt;+ calcularPagoNeto(): double" vertex="1">
+          <mxGeometry height="62" width="231" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_9" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" value="«record»&lt;br&gt;&lt;b&gt;EmpleadoPlanta&lt;/b&gt;" vertex="1">
+          <mxGeometry height="192" width="253" x="20" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_10" parent="avanzado_consol_9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ nombre: String&lt;br&gt;+ correo: String&lt;br&gt;+ salarioBase: double&lt;br&gt;+ horasExtra: int" vertex="1">
+          <mxGeometry height="80" width="253" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_11" parent="avanzado_consol_9" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="253" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_12" parent="avanzado_consol_9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ calcularPagoNeto(): double&lt;br&gt;- calcularPagoBruto(): double&lt;br&gt;- calcularDeducciones(): double" vertex="1">
+          <mxGeometry height="62" width="253" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_13" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" value="«record»&lt;br&gt;&lt;b&gt;Contratista&lt;/b&gt;" vertex="1">
+          <mxGeometry height="156" width="231" x="290" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_14" parent="avanzado_consol_13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ nombre: String&lt;br&gt;+ correo: String&lt;br&gt;+ horasTrabajadas: int&lt;br&gt;+ valorHora: double" vertex="1">
+          <mxGeometry height="80" width="231" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_15" parent="avanzado_consol_13" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="231" y="122" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_16" parent="avanzado_consol_13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ calcularPagoNeto(): double" vertex="1">
+          <mxGeometry height="26" width="231" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_17" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" value="«record»&lt;br&gt;&lt;b&gt;Practicante&lt;/b&gt;" vertex="1">
+          <mxGeometry height="138" width="231" x="540" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_18" parent="avanzado_consol_17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ nombre: String&lt;br&gt;+ correo: String&lt;br&gt;+ apoyoSostenimiento: double" vertex="1">
+          <mxGeometry height="62" width="231" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_19" parent="avanzado_consol_17" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="231" y="104" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_20" parent="avanzado_consol_17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ calcularPagoNeto(): double" vertex="1">
+          <mxGeometry height="26" width="231" y="112" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_21" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="«interface»&lt;br&gt;&lt;b&gt;RepositorioPagos&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="310" x="840" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_22" parent="avanzado_consol_21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="26" width="310" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_23" parent="avanzado_consol_21" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="310" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_24" parent="avanzado_consol_21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ guardar(registro: RegistroPago): void&lt;br&gt;+ listar(): List&amp;lt;RegistroPago&amp;gt;" vertex="1">
+          <mxGeometry height="44" width="310" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_25" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;RepositorioPagosEnMemoria&lt;/b&gt;" vertex="1">
+          <mxGeometry height="106" width="310" x="840" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_26" parent="avanzado_consol_25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="- registros: List&amp;lt;RegistroPago&amp;gt;" vertex="1">
+          <mxGeometry height="26" width="310" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_27" parent="avanzado_consol_25" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="310" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_28" parent="avanzado_consol_25" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ guardar(registro: RegistroPago): void&lt;br&gt;+ listar(): List&amp;lt;RegistroPago&amp;gt;" vertex="1">
+          <mxGeometry height="44" width="310" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_29" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#d5e8d4;strokeColor=#82b366;" value="«interface»&lt;br&gt;&lt;b&gt;Notificador&lt;/b&gt;" vertex="1">
+          <mxGeometry height="102" width="433" x="1200" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_30" parent="avanzado_consol_29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="26" width="433" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_31" parent="avanzado_consol_29" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="433" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_32" parent="avanzado_consol_29" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ notificar(destinatario: String, mensaje: String): void" vertex="1">
+          <mxGeometry height="26" width="433" y="76" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_33" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=28;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;b&gt;NotificadorConsola&lt;/b&gt;" vertex="1">
+          <mxGeometry height="88" width="433" x="1200" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_34" parent="avanzado_consol_33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="26" width="433" y="28" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_35" parent="avanzado_consol_33" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="433" y="54" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_36" parent="avanzado_consol_33" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ notificar(destinatario: String, mensaje: String): void" vertex="1">
+          <mxGeometry height="26" width="433" y="62" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_37" parent="1" style="swimlane;fontStyle=0;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=42;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#e1d5e7;strokeColor=#9673a6;" value="«record»&lt;br&gt;&lt;b&gt;RegistroPago&lt;/b&gt;" vertex="1">
+          <mxGeometry height="120" width="202" x="1100" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_38" parent="avanzado_consol_37" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="+ nombreEmpleado: String&lt;br&gt;+ pagoNeto: double" vertex="1">
+          <mxGeometry height="44" width="202" y="42" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_39" parent="avanzado_consol_37" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" value="" vertex="1">
+          <mxGeometry height="8" width="202" y="86" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_40" parent="avanzado_consol_37" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=6;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;whiteSpace=wrap;fontFamily=Consolas;fontSize=12;" value="" vertex="1">
+          <mxGeometry height="26" width="202" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_41" edge="1" parent="1" source="avanzado_consol_9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;" target="avanzado_consol_5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_42" edge="1" parent="1" source="avanzado_consol_13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;" target="avanzado_consol_5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_43" edge="1" parent="1" source="avanzado_consol_17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;" target="avanzado_consol_5" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="655.5" y="580" />
+              <mxPoint x="620" y="580" />
+              <mxPoint x="620" y="449" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="avanzado_consol_44" edge="1" parent="1" source="avanzado_consol_25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;" target="avanzado_consol_21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_45" edge="1" parent="1" source="avanzado_consol_33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=block;endFill=0;dashed=1;" target="avanzado_consol_29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_46" edge="1" parent="1" source="avanzado_consol_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;" target="avanzado_consol_5" value="usa">
+          <mxGeometry relative="1" x="-0.1192" as="geometry">
+            <Array as="points">
+              <mxPoint x="680" y="301" />
+              <mxPoint x="355.5" y="301" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="avanzado_consol_47" edge="1" parent="1" source="avanzado_consol_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;" target="avanzado_consol_21" value="depende de la abstracción">
+          <mxGeometry relative="1" x="-0.2128" as="geometry">
+            <Array as="points">
+              <mxPoint x="810" y="301" />
+              <mxPoint x="995" y="301" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="avanzado_consol_48" edge="1" parent="1" source="avanzado_consol_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;" target="avanzado_consol_29" value="depende de la abstracción">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_49" edge="1" parent="1" source="avanzado_consol_1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;fontSize=11;labelBackgroundColor=#ffffff;endArrow=open;endFill=0;dashed=1;" target="avanzado_consol_37" value="crea">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_50" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="&lt;b&gt;Principios SOLID aplicados&lt;/b&gt;&lt;br&gt;S: ServicioNomina solo orquesta&lt;br&gt;O: tipo nuevo = clase nueva, sin switch&lt;br&gt;L: cualquier Empleado sirve donde se espera uno&lt;br&gt;I: cada record tiene solo sus datos&lt;br&gt;D: repositorio y notificador inyectados como interfaces" vertex="1">
+          <mxGeometry height="122" width="420" x="20" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="avanzado_consol_51" parent="1" style="shape=note;whiteSpace=wrap;html=1;size=14;align=left;verticalAlign=top;spacingLeft=8;spacingTop=4;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;" value="&lt;b&gt;Paquete&lt;/b&gt;&lt;br&gt;com.udc.reut.cod.app.codigolimpioapp.avanzado.consol" vertex="1">
+          <mxGeometry height="54" width="520" x="40" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
